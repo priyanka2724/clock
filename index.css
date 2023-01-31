@@ -1,0 +1,133 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:salmon;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    position: relative;
+    width:29%;
+    height:59%;
+    background-color:aqua;
+    border-radius: 50%;   
+    border: 9px double darkcyan;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+img{
+    width: 90px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 80px;
+    z-index: 2;
+}
+.numbers div{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color:#8e44ad;
+    text-shadow: 1px 3px 2px rgb(58, 47, 47);
+}
+.twelve{
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.one{
+    top:48px;
+    right:90px;
+    transform: translateY(-50%);    
+}
+.two{
+    top:110px;
+    right:30px;
+    transform: translateY(-50%);    
+}
+.three{
+    right: 6px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+.four{
+    right:25px;
+    bottom: 66px;
+    transform: translateY(-50%);
+}
+.five{
+    right:92px;
+    bottom:3px;
+    transform: translateY(-50%);
+}
+.six{
+    right:6px;
+    left: 63%;
+    transform: translateX(-50%);
+    bottom: 1px;
+}
+.seven{
+    left:100px;
+    transform: translateX(-50%);
+    bottom:22px;
+}
+.eight{
+    left:39.9px;
+    transform: translateX(-50%);
+    bottom:83px;
+}
+.nine{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ten{
+    left:25px;
+    top:28%;
+    transform: translateY(-50%);
+}
+.eleven{
+    left:90px;
+    top:12%;
+    transform: translateY(-50%);
+}
+
+.arrow{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.arrow::before{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #182C61;
+    border-radius:50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 4;
+}
+.arrow div{
+    position: absolute;
+    width: 7px;
+    height: 120px;
+    transform-origin: bottom center;
+    background-color:#d35400;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+ }
+ .arrow .hours{
+    height: 80px;
+    transform: rotate(60deg);
+    
+ }
+ .arrow .seconds{
+    transform: rotate(250deg);
+    background-color:#eb3b5a; 
+ }
+ 
